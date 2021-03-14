@@ -4,17 +4,17 @@ export class Brick {
     private brickImage: HTMLImageElement = new Image()
 
     constructor(
-        private brickEnergy: number,
-        private brickHeight: number,
-        private brickWidth: number,
+        image: string,
         private position: Vector,
-        image: string
+        private brickWidth: number,
+        private brickHeight: number,
+        private brickEnergy: number,
     ) {
-        this.brickEnergy = brickEnergy
-        this.brickHeight = brickHeight
         this.brickImage.src = image
-        this.brickWidth = brickWidth
         this.position = position
+        this.brickWidth = brickWidth
+        this.brickHeight = brickHeight
+        this.brickEnergy = brickEnergy
     }
 
     // Getters
