@@ -5,11 +5,12 @@ import { Brick } from '../sprites/Brick'
 import { Paddle } from '../sprites/Paddle'
 
 export class CanvasView {
-    private canvas: HTMLCanvasElement
     private context: CanvasRenderingContext2D | null
     private info: HTMLObjectElement | null
     private scoreDisplay: HTMLObjectElement | null
     private start: HTMLObjectElement | null
+
+    canvas: HTMLCanvasElement
 
     constructor (canvasName: string) {
         this.canvas = document.querySelector(canvasName) as HTMLCanvasElement
