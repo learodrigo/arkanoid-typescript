@@ -12,7 +12,7 @@ export class CanvasView {
 
     canvas: HTMLCanvasElement
 
-    constructor (canvasName: string) {
+    constructor(canvasName: string) {
         this.canvas = document.querySelector(canvasName) as HTMLCanvasElement
         this.context = this.canvas.getContext('2d')
 
