@@ -21,8 +21,6 @@ export const createBricks = (): Brick[] => {
         const x = STAGE_PADDING + col * (BRICK_WIDTH  + BRICK_PADDING)
         const y = STAGE_PADDING + row * (BRICK_HEIGHT + BRICK_PADDING)
 
-        console.log({x, y})
-
         return [
             ...acc,
             new Brick(
